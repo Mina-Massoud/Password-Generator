@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+</head>
+<body>
+
+    <div class="container">
+        <header>Password Generator</header>
+        <hr>
+        <div class="top">
+            <!-- <span >fsfs</span> -->
+            <div class="input">
+                <input id="myInput" type="text">
+                <i id="copy" class="fa-solid fa-copy"></i>
+            </div>
+         
+            <br>
+            <div class="range">
+                <div class="span">
+                    <span id="cnt">20</span>
+                    <span>Password length</span>
+                </div>
+                <input id="range" type="range" min="10" max="30">
+            </div>
+       
+        </div>
+        <div class="bottom">
+            <h3>Password Settings</h3>
+            <div class="top_of_bottom">
+                <div class="row">
+                    <label for="type">Lowercase (a-z)</label>
+                    <input id="t1" type="checkbox">
+                </div>
+                <div class="row">
+                    <label for="type">Numbers (0-9)</label>
+                    <input id="t3" type="checkbox">
+                </div>
+              
+                <div class="row">
+                    <label for="type">Uppercase (A-Z)</label>
+                    <input id="t2" type="checkbox">
+                </div>
+                <div class="row">
+                    <label for="type">Symbols (!-$^+)</label>
+                    <input id="t4" type="checkbox">
+                </div>
+                <div class="row">
+                    <label for="type">Select All</label>
+                    <input id="t6"type="checkbox">
+                </div>
+                <div class="row">
+                    <label for="type">Exclude Duplicate</label>
+                    <input id="t5" type="checkbox">
+                </div>
+              
+            </div>
+          
+           <button id="generate">GENERATE PASSWORD</button>
+        </div>
+      
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
